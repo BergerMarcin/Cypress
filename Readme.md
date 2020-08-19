@@ -40,14 +40,14 @@ Dzięki temu też Cypress wykonuje kod linia po linii czekając na wykonanie upr
 await z JavaScript ES>8)
 <hr/> 
 
-###II Instalacja i ... dobre przykłady
+### II Instalacja i ... dobre przykłady
 Najlepiej zainstalować Cypress ([link od instalacji Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress.html#Installing)) 
 w podkatalog głównego rootsa projektu (ale nie w katalogu frontu, bo to generalnie osobna apka)<br/>
 Przy pierwszym uruchomieniu panelu Cypress (`npx cypress open`) od razu dodawane są dobre przykłady w katalogu Cypress 
 (dla mnie najciekawsze są w `/integration/examples`)
 <hr/>
 
-###III Uruchamianie (z panelem graficznym Cypress)
+### III Uruchamianie (z panelem graficznym Cypress)
 1. NAJPIERW NALEŻY ***URUCHOMIĆ SAMĄ TESTOWANĄ APKĘ WEB'ową*** (całość tj. backend i front, o ile są podzielone)
 2. POTEM z terminala, z katalogu Cypress należy ***uruchomić graficzny panel Cypress*** za pomocą: `npx cypress open` 
 3. DALEJ ***z panelu Cypress należy uruchomić dany test w danej przeglądarce*** (należy wybrać daną przeglądarkę w 
@@ -60,7 +60,7 @@ W przeciwnym wypadku w Cypressowej konsoli przeglądarki wskazana jest linia kod
 lub asercja/sprawdzenie, które zakończyło się negatywnie.
 <hr/>
 
-###IV Kod Cypress
+### IV Kod Cypress
 (poniższy przykład znajduje się całościowo w [rozdziale V przykład 1](###chapter51))
 
 1.Deklaracja testu
@@ -105,8 +105,8 @@ A zaraz, jeszcze html:
 > ```
 <hr/>
 
-###V Przykłady "całościowe"
-####<a name="chapter51"></a>Przykład 1 do powyższego rozdziału IV
+### V Przykłady "całościowe"
+#### <a name="chapter51"></a>Przykład 1 do powyższego rozdziału IV
 ***login_test.js*** *(plik z kodem testu do umieszczenia w katalogu Cypress)*
 ```
 describe('User can login after open page', () => {
@@ -129,7 +129,7 @@ describe('User can login after open page', () => {
 </form>
 ```
 
-####Przykład 2 - sprawdzenie czy działa Vuex'owy store (przechowujący i mutujący globalne stany) we Vue.js
+#### Przykład 2 - sprawdzenie czy działa Vuex'owy store (przechowujący i mutujący globalne stany) we Vue.js
 ```
 describe('At development mode I should have Vuex store data', () => {
   const getStore = () => cy.window().its('app.$store')
