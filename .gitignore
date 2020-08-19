@@ -1,0 +1,7 @@
+/local
+_cacache
+node_modules
+
+package-lock.json
+anonymous-cli-metrics.json
+
